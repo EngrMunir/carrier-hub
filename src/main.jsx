@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Root from './Components/Root/Root';
 import Home from './Components/Home/Home';
+import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
 
 const router= createBrowserRouter([
   {
@@ -16,8 +17,12 @@ const router= createBrowserRouter([
       {
         path:'/',
         element:<Home></Home>
-
-      }
+      },
+      {
+        path:'/applied',
+        element:<AppliedJobs></AppliedJobs>
+      },
+      
     ]
   }
 ])
